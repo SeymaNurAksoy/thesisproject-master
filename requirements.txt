@@ -40,7 +40,7 @@ pytz-deprecation-shim==0.1.0.post0
 regex==2021.11.2
 requests==2.26.0
 selenium==4.1.0
-six==1.16.0
+six=pip=1.16.0
 sniffio==1.2.0
 sortedcontainers==2.4.0
 soupsieve==2.3.1
