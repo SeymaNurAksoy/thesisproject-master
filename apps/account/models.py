@@ -1,8 +1,8 @@
+import email
 from http.client import FAILED_DEPENDENCY
 import uuid
 from django.db import models
 from django.contrib.auth.models import AbstractUser,User
-from django.db.models.signals import post_save
 
 # Create your models here.
 
@@ -20,9 +20,3 @@ class Profile(models.Model):
     def __str__(self):
         return self.email
 
-def profileUpdated(sender,instance,created,**kwargs):
-    print('Profile Saved')
-    print('Instance:',instance)
-    print('Created:',created)
-
-post_save.connect(profileUpdated,sender=Profile)
